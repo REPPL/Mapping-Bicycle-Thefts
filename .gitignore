@@ -37,3 +37,9 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+.DS_Store
+.Rprofile
+renv/
+Mapping-Bicycle-Thefts.Rproj
+data/
+Annotated-Script_files/
