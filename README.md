@@ -24,17 +24,16 @@ v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
 The available data on [data.police.uk](https://data.police.uk) is
 separated by year and police force. The first step is to download data
 files for 2020 for a number of police forces across England and Wales
-and to store them in a directory
-(`_assets/Mapping-Bicycle-Thefts/_data/`) where **R** can find them.
+and to store them in a directory (`data/`) where **R** can find them.
 
 Because all of these files end with “-street.csv”, the `Sys.glob()`
 function can be used to locate **all** files matching this pattern and
-store the result in the variable `data_files`. (The `*` placeholder
+store the result in the variable `data_files`. (The `*` place holder
 means “any combination of letters”.)
 
 ``` r
 data_files <- Sys.glob(
-  "data/uk_police/*/*-street.csv")
+  "data/*/*-street.csv")
 ```
 
 ## Combine data files
@@ -489,7 +488,7 @@ individual incidents.</figcaption>
 ![](Annotated-Script_files/figure-gfm/unnamed-chunk-30-1.png)<!-- -->
 
 *(The interactive version of this map is not viewable on GitHub; knit
-directly into into HTML.)*
+the .Rmd script directly to HTML.)*
 
 # Acknowledgements
 
